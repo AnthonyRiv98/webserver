@@ -27,13 +27,36 @@
         </form>
 
         <p>Look on the board itself and locate the FCC number and ID number printed on the board</p><br />
-
+        <p>Enter the 5 first didgits on the ID number</p><br />
         <form>
-            FCC:<br />
-            <input type="text" name="FCC"><br />
             ID:<br />
-            <input type="text" name="ID">
+            <input id="demo" type="text" name="ID">
         </form>
+        
+        <button type="button" onclick="myFunction()">Test Input</button>
+        <p id="p01"></p>
+        
+        <script>
+        function myFunction() {
+          var message, x;
+        
+          message = document.getElementById("p01");
+          message.innerHTML = "";
+          x = document.getElementById("demo").value;
+          var n = x.length;
+          try { 
+            if(x == "")  throw "empty";
+            if(isNaN(x)) throw "not a number";
+            x = Number(x);
+            if(n < 5)  throw "you have enetered less than 5 didgits";
+            if(n > 5)   throw "you have enetered more than 5 didgits";
+          }
+          catch(err) {
+            message.innerHTML = err;
+          }
+        }
+        </script>
+        
 
     </body>
 </html>
