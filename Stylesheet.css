@@ -1,0 +1,30 @@
+h1{
+    background-color:white;
+    border-style: double
+}
+img{
+    width="500" ;
+    height="500";
+    border-style: dotted;
+}
+
+body{
+    text-align: center;
+    background-color: tomato
+    
+}
+
+.welcome{
+    background-color: white;
+    border-style: double
+}
+
+.question{
+    border-style: inset;
+    background-color: white;
+}
+
+div{
+    border-style: double;
+    background-color: white;
+}
