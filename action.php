@@ -7,7 +7,7 @@
 
         <?php if ($_POST['eth'])
             elseif ($_POST['usb3'])
-            elseif ($_POST['pwr'])
+            elseif ($_POST['pwr']) ?>
             you have a raspberry pi 4 B+ model
 
     </head>
