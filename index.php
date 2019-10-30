@@ -33,10 +33,10 @@
         <br />
         <form>
             ID number:<br />
-            <input id="demo" type="text" name="ID">
+            <input id="demo" type="text" name="ID" onmouseout="myFunction();">
         </form>
         
-        <button type="button" onclick="myFunction()">Input</button>
+        <!--button type="button" onclick="myFunction()">Input</button-->
         <p id="p01"></p>
         
         <script>
