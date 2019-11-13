@@ -37,8 +37,8 @@
 
             if (mysqli_num_rows($result) > 0) {
                 // output data 
-                $row = mysqli_fetch_assoc($result) 
-                    echo "type: " . $row["type"]. " - Usb ports: " . $row["usb"]. " - Ethernet: " . $row["ethernet"]. " - Power connector: " . $row["power"]. " - HDMI port: " . $row["HDMI"].
+                $row = mysqli_fetch_assoc($result);
+                echo "type: " . $row["type"]. " - Usb ports: " . $row["usb"]. " - Ethernet: " . $row["ethernet"]. " - Power connector: " . $row["power"]. " - HDMI port: " . $row["HDMI"];
                 
             } else {
                 echo "0 results";
