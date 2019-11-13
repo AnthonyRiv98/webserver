@@ -8,16 +8,16 @@
         </div>
 
             
-        <?php if ((int)($_POST['eth']) == 1 and (int)($_POST['usb3']) == 1 and (int)($_POST['pwr']) == 1):
+        <?php if ((int)($_POST['eth']) == 1 and (int)($_POST['usb3']) == 1 and (int)($_POST['pwr']) == 1) {
             $chk = 4; ?>
             you have a raspberry pi 4 model
-        <?php elseif ((int)($_POST['eth']) == 0 and (int)($_POST['usb3']) == 0 and (int)($_POST['pwr']) == 0):
+        <?php } elseif ((int)($_POST['eth']) == 0 and (int)($_POST['usb3']) == 0 and (int)($_POST['pwr']) == 0) {
             $chk = 3; ?>
             you have a raspberry pi 3 A+ model
-        <?php elseif ((int)($_POST['eth']) == 1 and (int)($_POST['usb3']) == 0 and (int)($_POST['pwr']) == 0):
+        <?php } elseif ((int)($_POST['eth']) == 1 and (int)($_POST['usb3']) == 0 and (int)($_POST['pwr']) == 0) {
             $chk = 2; ?>
             you have a raspberry pi 3 B+ model
-        <?php endif; ?>
+        <?php } endif; ?>
 
         <?php
             $servername = "localhost";
