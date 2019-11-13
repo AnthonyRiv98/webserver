@@ -19,6 +19,8 @@
             you have a raspberry pi 3 B+ model
         <?php } ?>
 
+        <br/>
+
         <?php
             $servername = "localhost";
             $username = "php";
