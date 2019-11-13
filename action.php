@@ -19,7 +19,7 @@
             you have a raspberry pi 3 B+ model
         <?php } ?>
 
-        </*?php
+        <?php
             $servername = "localhost";
             $username = "php";
             $password = "Ant1998304";
@@ -32,11 +32,11 @@
                 die("Connection failed: " . mysqli_connect_error());
             }
 
-        $sql = "SELECT * FROM PI where id = {$chk}";
+        $sql = "SELECT * FROM PI where id = {$chk};";
             $result = mysqli_query($conn, $sql);
 
             if (mysqli_num_rows($result) > 0) {
-                // output data of each row
+                // output data 
                 $row = mysqli_fetch_assoc($result) 
                     echo "type: " . $row["type"]. " - Usb ports: " . $row["usb"]. " - Ethernet: " . $row["ethernet"]. " - Power connector: " . $row["power"]. " - HDMI port: " . $row["HDMI"].
                 
@@ -45,6 +45,6 @@
             }
 
             mysqli_close($conn);
-        ?*/>
+        ?>
 
     </head>
