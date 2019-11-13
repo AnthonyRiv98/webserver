@@ -4,7 +4,7 @@
     <link rel="stylesheet" type="text/css" href="Stylesheet.css">
 
         <div>
-            Hello <?php echo htmlspecialchars($_POST['fname']), " ", htmlspecialchars($_POST['lname']); ?>
+            Hello <?=htmlspecialchars($_POST['fname']) . " " . htmlspecialchars($_POST['lname'])?>
         </div>
 
             
@@ -17,9 +17,9 @@
         <?php } elseif ((int)($_POST['eth']) == 1 and (int)($_POST['usb3']) == 0 and (int)($_POST['pwr']) == 0) {
             $chk = 2; ?>
             you have a raspberry pi 3 B+ model
-        <?php } endif; ?>
+        <?php } ?>
 
-        <?php
+        </*?php
             $servername = "localhost";
             $username = "php";
             $password = "Ant1998304";
@@ -45,6 +45,6 @@
             }
 
             mysqli_close($conn);
-        ?>
+        ?*/>
 
     </head>
